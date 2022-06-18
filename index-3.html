@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-cemter">Google Form test</h1>
+        <form action="javascript:GoForm();" class="needs-validation" novalidate>
+            <div>
+                <label for="name" class="form-lable">Name</label>
+                <input type="text" name="name" id="name" class="form-control mb-4" required>
+                <div class="valid-feedback">姓名驗證成功</div>
+                <div class="invalid-feedback">姓名驗證失敗</div>
+            </div>
+            <div>
+                <label for="tel" class="form-lable">Tel</label>
+                <input type="text" name="tel" id="tel" class="form-control" pattern="[0-9]{10}" required>
+                <div class="valid-feedback">電話驗證成功</div>
+                <div class="invalid-feedback">電話驗證失敗</div>
+            </div>
+            <input type="submit" value="送出" class="btn btn-primary">
+
+        </form>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="container mp-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>結帳</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequatur ex quo sequi dolores
+                    officiis, et dignissimos suscipit architecto ipsa illum, iste saepe temporibus voluptatem fugit
+                    dolorem voluptatum vero sunt.</p>
+            </div>
+            <div class="col-12 col-md-4 order-md-last">
+                <h4 class="d-flex justify-content-between">
+                    <span class="text-primary">購物車</span>
+                    <span class="badge bg-primary text-while">2</span>
+                </h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <h6 class="mb-0">Tesla Model3</h6>
+                        <span>$300</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <h6 class="mb-0">BMW M3</h6>
+                        <span>$600</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <h6 class="mb-0">Benz AMG</h6>
+                        <span>$800</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <h6 class="mb-0">Mazda 3</h6>
+                        <span>$900</span>
+                    </li>
+            </div>
+            <div class="col-12 col-md-8">
+                <h4>結帳資料</h4>
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" name="firstname" id="firstname" class="form-control form-control-lg"
+                                placeholder="名字">
+                            <label for="firstname" class="form-lable">名字</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" name="lastname" id="lastname" class="form-control form-control-lg"
+                                placeholder="姓氏">
+                            <label for="lastname" class="form-lable">姓氏</label>
+                        </div>
+                    </div>
+                </div>
+
+                <p></p>
+                <label for="email" class="form-lable">Email</label>
+                <input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="輸入電子信箱">
+                <p></p>
+                <label for="tel" class="form-lable">電話</label>
+                <input type="tel" name="tel" id="tel" class="form-control form-control-lg" placeholder="輸入電話">
+                <p></p>
+                <p>性別 :</p>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="sex" id="male" class="form-check-input">
+                    <label for="male" class="form-check-lable">男</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="sex" id="female" class="form-check-input">
+                    <label for="female" class="form-check-lable">女</label>
+                </div>
+                <p></p>
+                <p>可收貨的時段 :</p>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="morning" id="morning" class="form-check-input">
+                    <label for="morning" class="form-check-lable">早上</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="afternoon" id="afternoon" class="form-check-input">
+                    <label for="afternoon" class="form-check-lable">下午</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="evening" id="evening" class="form-check-input">
+                    <label for="evening" class="form-check-lable">晚上</label>
+                </div>
+                <p></p>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="add" class="form-lable">地址</label>
+                    </div>
+                    <div class="col-3">
+                        <select name="add" id="add" class="form-select">
+                            <option value="tpc">台北市</option>
+                            <option value="ntp">新北市</option>
+                            <option value="tyc">桃園市</option>
+                        </select>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="street" id="street" class="form-control" placeholder="請輸入街道">
+                    </div>
+                </div>
+                <p></p>
+                <label for="school" class="form-lable">學校</label>
+                <select name="school" id="school" class="form-select">
+                    <option value="NTU">台灣大學</option>
+                    <option value="NTUA">台灣藝術大學</option>
+                    <option value="UCH">健行科大</option>
+                    <option value="LHU">龍華科大</option>
+                </select>
+                <p></p>
+                <input type="submit" value="進行結帳" class="btn btn-primary btn-lg w-100">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function GoForm() { //這裡要對應到自己的 javascript 名稱
+            //宣告欄位
+            var field1 = $("[name='name']").val();
+            var field2 = $("[name='tel']").val();
+            $.ajax({
+                url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdhehsumpdGGzgH9HOgefzNUBJCqvHf4vO6UnMoG0v_Ey42GQ/formResponse", //Google Form 裡面的 form action 網址 ＊＊記得要填＊＊
+                data: { //Google Form 裡面的欄位 name ＊＊記得要改＊＊
+                    "entry.2002883771": field1,
+                    "entry.1599620200": field2,
+                },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                        alert("已送出!"); //完成送出表單的警告視窗
+                    },
+                    200: function () {
+                        alert("已送出!"); //完成送出表單的警告視窗
+                    }
+                }
+            });
+            console.log(field1, field2);
+        }
+    </script>
+    <script>
+        (function () {
+            'use strict'
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>
+
+
+</form>

@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    justify-content: center;
+    margin: 50px 0;
+    grid-gap: 60px 30px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #666;
+}
+
+.card__img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__text {
+    padding: 0 20px 30px;
+}
+
+.card__text h2 {
+    color: rgb(49, 50, 59);
+}
+
+.card__text p {
+    color: rgb(164, 170, 188);
+    text-align: justify;
+    font-size: 14px;
+}

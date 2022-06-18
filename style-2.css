@@ -1,0 +1,32 @@
+.parent {
+    width: 300px;
+    height: 200px;
+    background-color: yellow;
+    perspective: 200px;
+    perspective-origin: center 300%;
+    /*transform-style: preserve-3d;*/
+}
+
+.box {
+    width: 10px;
+    height: 100px;
+    /*background-color: black;
+    transform: perspective(500px) rotateY(-45deg);
+    transform-origin: 100%;*/
+}
+
+.box1 {
+    background-color: black;
+    transform: rotateX(45deg);
+}
+
+.box2 {
+    background-color: blue;
+    transform: translate(200px, -60px) rotateX(45deg);
+}
+
+/*.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}*/

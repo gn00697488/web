@@ -1,0 +1,28 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    /*animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: alternate-reverse;*/
+    animation: move 2s cubic-bezier(0,1.9,.01,1.53) .5s both;
+}
+
+/*滑鼠一過去會暫停
+.box:hover {
+    animation-play-state: paused;
+}*/
+
+@keyframes move {
+    from {
+        background-color: red;
+        width: 100px;
+    }
+    to {
+        background-color: blue;
+        width: 300px;
+    }
+}
